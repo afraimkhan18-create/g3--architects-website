@@ -48,8 +48,6 @@
     font-size: 1.25rem;
     font-weight: 600;
     border-radius: 6px;
-    width: 180px;
-    height: 64px;
     border: none;
 }
 
@@ -199,12 +197,43 @@ main > section{
 .features {
     gap: 140px;
 }
+#Experience-badge{
+    padding: 40px 40px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: -100px;
+    margin-top: -100px;
+}
+#Experience-year{
+    font-size: 4rem;
+    font-weight: 700;
+}
+.features img{
+    width: 100%;
+}
+/* footer-section-start */
+.copy-right{
+    background-color: #FFF4E7;
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-top: 130px;
+    margin-bottom: 200px;
+    border-radius: 8px;
+}
+.copy-right-text{
+    font-weight: 400;
+    font-size: 1.25rem;
+    padding-top: 39px;
+    padding-bottom: 38px;
+    text-align: center;
+}
 
 /* responsive media query */
 
 @media screen and (max-width:576px) {
     .navbar,
      .nav-link,
+     .features,
      .teams{
         flex-direction: column;
     }
@@ -234,6 +263,10 @@ main > section{
         gap: 50px;
        
     }
+    #Experience-badge{
+        margin-top: 20px;
+        margin-left: 20px;
+    }
 
     
 }
@@ -242,7 +275,7 @@ main > section{
 /* medium device */
 @media screen and (min-width:576px) and (max-width:992px) {
 
-    .teams{
+    .teams,.features {
         flex-direction: column;
         text-align: center;
     }
